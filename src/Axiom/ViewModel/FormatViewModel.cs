@@ -114,6 +114,7 @@ namespace ViewModel
             new FormatContainer() { Name = "Image", Category = true  },
             new FormatContainer() { Name = "jpg",   Category = false },
             new FormatContainer() { Name = "png",   Category = false },
+            new FormatContainer() { Name = "gif",   Category = false },
             new FormatContainer() { Name = "webp",  Category = false },
         };
 

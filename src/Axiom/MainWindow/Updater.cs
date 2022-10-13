@@ -49,7 +49,7 @@ namespace Axiom
                 ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
                 WebClient wc = new WebClient();
-                wc.Headers.Add(HttpRequestHeader.UserAgent, "Axiom (https://github.com/MattMcManis/Axiom)" + " v" + currentVersion + "-" + currentBuildPhase + " Update Check");
+                wc.Headers.Add(HttpRequestHeader.UserAgent, "Axiom (https://github.com/WarpTraveller/Axiom)" + " v" + currentVersion + "-" + currentBuildPhase + " Update Check");
                 wc.Headers.Add("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
                 wc.Headers.Add("accept-language", "en-US,en;q=0.9");
                 wc.Headers.Add("dnt", "1");
@@ -63,7 +63,7 @@ namespace Axiom
 
                 try
                 {
-                    parseLatestVersion = wc.DownloadString("https://raw.githubusercontent.com/MattMcManis/Axiom/master/.version");
+                    parseLatestVersion = wc.DownloadString("https://raw.githubusercontent.com/WarpTraveller/Axiom/master/.version");
                 }
                 catch
                 {
@@ -205,7 +205,7 @@ namespace Axiom
                     ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
                     WebClient wc = new WebClient();
-                    wc.Headers.Add(HttpRequestHeader.UserAgent, "Axiom (https://github.com/MattMcManis/Axiom)" + " v" + currentVersion + "-" + currentBuildPhase + " Update Check");
+                    wc.Headers.Add(HttpRequestHeader.UserAgent, "Axiom (https://github.com/WarpTraveller/Axiom)" + " v" + currentVersion + "-" + currentBuildPhase + " Update Check");
                     wc.Headers.Add("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
                     wc.Headers.Add("Accept-Language", "en-US,en;q=0.9");
                     wc.Headers.Add("dnt", "1");
@@ -219,7 +219,7 @@ namespace Axiom
 
                     try
                     {
-                        parseLatestVersion = wc.DownloadString("https://raw.githubusercontent.com/MattMcManis/Axiom/master/.version");
+                        parseLatestVersion = wc.DownloadString("https://raw.githubusercontent.com/WarpTraveller/Axiom/master/.version");
                     }
                     catch
                     {

@@ -50,6 +50,7 @@ namespace Profiles
                     VM.FormatView.Format_Container_SelectedItem == "ogv" ||
                     VM.FormatView.Format_Container_SelectedItem == "jpg" ||
                     VM.FormatView.Format_Container_SelectedItem == "png" ||
+                    VM.FormatView.Format_Container_SelectedItem == "gif" ||
                     VM.FormatView.Format_Container_SelectedItem == "webp")
                 {
                     // Format

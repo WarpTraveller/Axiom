@@ -66,6 +66,7 @@ namespace Generate.Video
                 codec_SelectedItem == "Theora" ||
                 codec_SelectedItem == "JPEG" ||
                 codec_SelectedItem == "PNG" ||
+                codec_SelectedItem == "GIF" ||
                 codec_SelectedItem == "WebP")
             {
                 return "-1";
@@ -101,6 +102,7 @@ namespace Generate.Video
                 codec_SelectedItem == "Theora" ||
                 codec_SelectedItem == "JPEG" ||
                 codec_SelectedItem == "PNG" ||
+                codec_SelectedItem == "GIF" ||
                 codec_SelectedItem == "WebP")
             {
                 return "-1";
@@ -232,6 +234,7 @@ namespace Generate.Video
                         codec_SelectedItem == "Theora" ||
                         codec_SelectedItem == "JPEG" ||
                         codec_SelectedItem == "PNG" ||
+                        codec_SelectedItem == "GIF" ||
                         codec_SelectedItem == "WebP")
                     {
                         // If User enters "auto" or textbox is empty

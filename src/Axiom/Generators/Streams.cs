@@ -129,6 +129,14 @@ namespace Generate
                     //mcMap = string.Empty;
                     break;
 
+                case "gif":
+                    mMap = string.Empty; // do not copy metadata
+                    mvMap = string.Empty;
+                    maMap = string.Empty;
+                    msMap = string.Empty;
+                    //mcMap = string.Empty;
+                    break;
+
                 case "webp":
                     mMap = string.Empty; // do not copy metadata
                     mvMap = string.Empty;
@@ -421,6 +429,10 @@ namespace Generate
                             aMap = "-an"; // disable audio
                             break;
 
+                        case "gif":
+                            aMap = "-an"; // disable audio
+                            break;
+
                         case "webp":
                             aMap = "-an"; // disable audio
                             break;
@@ -627,6 +639,10 @@ namespace Generate
                                 sMap = "-sn"; // disable subtitles
                                 break;
 
+                            case "gif":
+                                sMap = "-sn"; // disable subtitles
+                                break;
+
                             case "webp":
                                 sMap = "-sn"; // disable subtitles
                                 break;
@@ -655,6 +671,7 @@ namespace Generate
                         // Image
                         if (VM.FormatView.Format_Container_SelectedItem == "jpg" ||
                             VM.FormatView.Format_Container_SelectedItem == "png" ||
+                            VM.FormatView.Format_Container_SelectedItem == "gif" ||
                             VM.FormatView.Format_Container_SelectedItem == "webp")
                         {
                             sMap = "-sn";

@@ -567,6 +567,38 @@ namespace Controls
 
 
         // -------------------------
+        // GIF
+        // -------------------------
+        public class GIF
+        {
+            // Media Type
+            public readonly static ObservableCollection<string> media = new ObservableCollection<string>()
+            {
+                "Image",
+                "Sequence"
+            };
+
+            // Codecs
+            public readonly static ObservableCollection<string> video = new ObservableCollection<string>()
+            {
+                "GIF"
+            };
+
+            public readonly static ObservableCollection<string> audio = new ObservableCollection<string>()
+            {
+                "None"
+            };
+
+            public readonly static ObservableCollection<string> subtitle = new ObservableCollection<string>()
+            {
+                "Burn",
+                "None"
+            };
+        }
+
+
+
+        // -------------------------
         // webp
         // -------------------------
         public class WebP

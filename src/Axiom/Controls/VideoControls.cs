@@ -80,6 +80,7 @@ namespace Controls.Video
             { "MPEG-4",     new Codec.MPEG_4() },
             { "JPEG",       new Image.Codec.JPEG() },
             { "PNG",        new Image.Codec.PNG() },
+            { "GIF",        new Image.Codec.GIF() },
             { "WebP",       new Image.Codec.WebP() },
             { "Copy",       new Codec.Copy() },
             { "None",       new Codec.None() }

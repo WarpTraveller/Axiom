@@ -79,6 +79,8 @@ namespace Axiom
                     return "JPG (*.jpg)|*.jpg";
                 case "png":
                     return "PNG (*.png)|*.png";
+                case "gif":
+                    return "GIF (*.gif)|*.gif";
                 case "webp":
                     return "WebP (*.webp)|*.webp";
                 default:
@@ -373,10 +375,13 @@ namespace Axiom
                     // Image Sequence Renamer
                     if (VM.FormatView.Format_MediaType_SelectedItem == "Sequence")
                     {
-                        // Must be this name
-                        outputFileName_Original = "image-%03d";
-                        outputFileName_Tokens = "image-%03d";
-                        outputFileName = "image-%03d";
+                        if (VM.FormatView.Format_Container_SelectedItem != "gif")
+                        {
+                            // Must be this name
+                            outputFileName_Original = "image-%03d";
+                            outputFileName_Tokens = "image-%03d";
+                            outputFileName = "image-%03d";
+                        }
                     }
 
                     // -------------------------
@@ -1403,6 +1408,7 @@ namespace Axiom
                 Controls.Video.Codec.HEVC_QSV hevc_qsv = new Controls.Video.Codec.HEVC_QSV();
                 Controls.Video.Image.Codec.JPEG jpeg = new Controls.Video.Image.Codec.JPEG();
                 Controls.Video.Image.Codec.PNG png = new Controls.Video.Image.Codec.PNG();
+                Controls.Video.Image.Codec.GIF gif = new Controls.Video.Image.Codec.GIF();
                 Controls.Video.Image.Codec.WebP webp = new Controls.Video.Image.Codec.WebP();
 
                 // Pixel Format
@@ -1425,6 +1431,7 @@ namespace Axiom
                                                  .Concat(hevc_qsv.pixelFormat)
                                                  .Concat(jpeg.pixelFormat)
                                                  .Concat(png.pixelFormat)
+                                                 .Concat(gif.pixelFormat)
                                                  .Concat(webp.pixelFormat)
                                                  .Where(s => !string.IsNullOrWhiteSpace(s))
                                                  .Where(s => !s.Equals("none"))

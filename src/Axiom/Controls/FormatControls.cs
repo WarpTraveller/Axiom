@@ -398,6 +398,29 @@ namespace Controls.Format
                     break;
 
                 // -------------------------
+                // GIF
+                // -------------------------
+                case "gif":
+
+                    // Media Type
+                    VM.FormatView.Format_MediaType_Items = Containers.GIF.media;
+                    VM.FormatView.Format_MediaType_SelectedItem = "Sequence";
+                    VM.FormatView.Format_MediaType_IsEnabled = true;
+
+                    // Video Codec
+                    VM.VideoView.Video_Codec_Items = Containers.GIF.video;
+                    VM.VideoView.Video_Codec_SelectedItem = "GIF";
+
+                    // Audio Codec
+                    VM.AudioView.Audio_Codec_Items = Containers.GIF.audio;
+                    VM.AudioView.Audio_Codec_SelectedItem = "None";
+
+                    // Subtitle Codec
+                    VM.SubtitleView.Subtitle_Codec_Items = Containers.GIF.subtitle;
+                    VM.SubtitleView.Subtitle_Codec_SelectedItem = "None";
+                    break;
+
+                // -------------------------
                 // webp
                 // -------------------------
                 case "webp":
@@ -1311,6 +1334,7 @@ namespace Controls.Format
                         MainWindow.Format_Container_PreviousItem == "wav" ||
                         MainWindow.Format_Container_PreviousItem == "jpg" ||
                         MainWindow.Format_Container_PreviousItem == "png" ||
+                        MainWindow.Format_Container_PreviousItem == "gif" ||
                         MainWindow.Format_Container_PreviousItem == "webp")
                     {
                         VM.AudioView.Audio_Stream_SelectedItem = "all";
@@ -1336,6 +1360,7 @@ namespace Controls.Format
             // -------------------------
             else if (VM.FormatView.Format_Container_SelectedItem == "jpg" ||
                      VM.FormatView.Format_Container_SelectedItem == "png" ||
+                     VM.FormatView.Format_Container_SelectedItem == "gif" ||
                      VM.FormatView.Format_Container_SelectedItem == "webp"
                 )
             {
@@ -1377,6 +1402,7 @@ namespace Controls.Format
                         MainWindow.Format_Container_PreviousItem == "ogv" ||
                         MainWindow.Format_Container_PreviousItem == "jpg" ||
                         MainWindow.Format_Container_PreviousItem == "png" ||
+                        MainWindow.Format_Container_PreviousItem == "gif" ||
                         MainWindow.Format_Container_PreviousItem == "webp")
                     {
                         VM.AudioView.Audio_Stream_SelectedItem = "1";

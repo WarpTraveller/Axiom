@@ -217,10 +217,10 @@ namespace Axiom
             // -------------------------
             // Set Current Version to Assembly Version
             // -------------------------
-            System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
-            FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
-            string assemblyVersion = fvi.FileVersion;
-            currentVersion = new Version(assemblyVersion);
+            //System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
+            //FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
+            //string assemblyVersion = fvi.FileVersion;
+            currentVersion = new Version("1.9.6.1");
 
             // -------------------------
             // Start the Log Console (Hidden)

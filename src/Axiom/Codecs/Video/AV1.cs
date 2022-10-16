@@ -55,11 +55,11 @@ namespace Controls.Video.Codec
             new ViewModel.Video.VideoEncodeSpeed() { Name = "Slower",     Command = "-cpu-used 0" },
             new ViewModel.Video.VideoEncodeSpeed() { Name = "Slow",       Command = "-cpu-used 0" },
             new ViewModel.Video.VideoEncodeSpeed() { Name = "Medium",     Command = "-cpu-used 1" },
-            new ViewModel.Video.VideoEncodeSpeed() { Name = "Fast",       Command = "-cpu-used 1" },
-            new ViewModel.Video.VideoEncodeSpeed() { Name = "Faster",     Command = "-cpu-used 2" },
-            new ViewModel.Video.VideoEncodeSpeed() { Name = "Very Fast",  Command = "-cpu-used 3" },
-            new ViewModel.Video.VideoEncodeSpeed() { Name = "Super Fast", Command = "-cpu-used 4" },
-            new ViewModel.Video.VideoEncodeSpeed() { Name = "Ultra Fast", Command = "-cpu-used 5" }
+            new ViewModel.Video.VideoEncodeSpeed() { Name = "Fast",       Command = "-cpu-used 2" },
+            new ViewModel.Video.VideoEncodeSpeed() { Name = "Faster",     Command = "-cpu-used 3" },
+            new ViewModel.Video.VideoEncodeSpeed() { Name = "Very Fast",  Command = "-cpu-used 4" },
+            new ViewModel.Video.VideoEncodeSpeed() { Name = "Super Fast", Command = "-cpu-used 5" },
+            new ViewModel.Video.VideoEncodeSpeed() { Name = "Ultra Fast", Command = "-cpu-used 6" }
         };
 
         // -------------------------

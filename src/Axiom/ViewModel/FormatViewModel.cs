@@ -59,7 +59,7 @@ namespace ViewModel
         /// </summary>
         public void LoadControlsDefaults()
         {
-            Format_Container_SelectedItem = "webm";
+            Format_Container_SelectedItem = "mp4";
 
             Format_MediaType_IsEnabled = true;
             Format_MediaType_SelectedItem = "Video";

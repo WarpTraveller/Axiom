@@ -50,6 +50,7 @@ namespace Controls
             {
                 "VP8",
                 "VP9",
+                "AV1",
                 "Copy"
             };
 
@@ -86,6 +87,7 @@ namespace Controls
             {
                 "x264",
                 "x265",
+                "AV1",
                 "Copy"
             };
 
@@ -99,6 +101,7 @@ namespace Controls
                 "HEVC AMF",
                 "HEVC NVENC",
                 "HEVC QSV",
+                "AV1",
                 "Copy"
             };
 

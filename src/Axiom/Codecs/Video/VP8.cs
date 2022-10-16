@@ -54,12 +54,12 @@ namespace Controls.Video.Codec
             new ViewModel.Video.VideoEncodeSpeed() { Name = "Very Slow",  Command = "-quality good -cpu-used 0",  Command_2Pass = "-quality best -cpu-used 0" },
             new ViewModel.Video.VideoEncodeSpeed() { Name = "Slower",     Command = "-quality good -cpu-used 0",  Command_2Pass = "-quality best -cpu-used 0" },
             new ViewModel.Video.VideoEncodeSpeed() { Name = "Slow",       Command = "-quality good -cpu-used 0",  Command_2Pass = "-quality best -cpu-used 0" },
-            new ViewModel.Video.VideoEncodeSpeed() { Name = "Medium",     Command = "-quality good -cpu-used 0",  Command_2Pass = "-quality best -cpu-used 0" },
-            new ViewModel.Video.VideoEncodeSpeed() { Name = "Fast",       Command = "-quality good -cpu-used 1",  Command_2Pass = "-quality best -cpu-used 1" },
-            new ViewModel.Video.VideoEncodeSpeed() { Name = "Faster",     Command = "-quality good -cpu-used 2",  Command_2Pass = "-quality best -cpu-used 2" },
-            new ViewModel.Video.VideoEncodeSpeed() { Name = "Very Fast",  Command = "-quality good -cpu-used 3",  Command_2Pass = "-quality best -cpu-used 3" },
-            new ViewModel.Video.VideoEncodeSpeed() { Name = "Super Fast", Command = "-quality good -cpu-used 4",  Command_2Pass = "-quality best -cpu-used 4" },
-            new ViewModel.Video.VideoEncodeSpeed() { Name = "Ultra Fast", Command = "-quality good -cpu-used 5",  Command_2Pass = "-quality best -cpu-used 5" },
+            new ViewModel.Video.VideoEncodeSpeed() { Name = "Medium",     Command = "-quality good -cpu-used 1",  Command_2Pass = "-quality best -cpu-used 1" },
+            new ViewModel.Video.VideoEncodeSpeed() { Name = "Fast",       Command = "-quality good -cpu-used 2",  Command_2Pass = "-quality best -cpu-used 2" },
+            new ViewModel.Video.VideoEncodeSpeed() { Name = "Faster",     Command = "-quality good -cpu-used 3",  Command_2Pass = "-quality best -cpu-used 3" },
+            new ViewModel.Video.VideoEncodeSpeed() { Name = "Very Fast",  Command = "-quality good -cpu-used 4",  Command_2Pass = "-quality best -cpu-used 4" },
+            new ViewModel.Video.VideoEncodeSpeed() { Name = "Super Fast", Command = "-quality good -cpu-used 5",  Command_2Pass = "-quality best -cpu-used 5" },
+            new ViewModel.Video.VideoEncodeSpeed() { Name = "Ultra Fast", Command = "-quality good -cpu-used 6",  Command_2Pass = "-quality best -cpu-used 6" },
         };
 
         // -------------------------
